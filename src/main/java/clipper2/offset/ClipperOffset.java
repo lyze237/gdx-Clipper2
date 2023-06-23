@@ -14,8 +14,8 @@ import clipper2.core.PointD;
 import clipper2.core.Rect64;
 import clipper2.engine.Clipper64;
 import clipper2.engine.PolyTree64;
-import tangible.OutObject;
-import tangible.RefObject;
+import clipper2.tangible.OutObject;
+import clipper2.tangible.RefObject;
 
 import java.util.ArrayList;
 import java.util.Arrays;

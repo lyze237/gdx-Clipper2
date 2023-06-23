@@ -11,8 +11,8 @@ import clipper2.core.Paths64;
 import clipper2.core.Point64;
 import clipper2.core.Rect64;
 import clipper2.engine.PointInPolygonResult;
-import tangible.OutObject;
-import tangible.RefObject;
+import clipper2.tangible.OutObject;
+import clipper2.tangible.RefObject;
 
 /**
  * RectClip intersects subject polygons with the specified rectangular clipping

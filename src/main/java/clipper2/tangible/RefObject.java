@@ -1,4 +1,4 @@
-package tangible;
+package clipper2.tangible;
 
 //----------------------------------------------------------------------------------------
 //	Copyright © 2007 - 2020 Tangible Software Solutions, Inc.

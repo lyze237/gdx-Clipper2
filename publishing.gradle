@@ -1,0 +1,36 @@
+javadoc {
+    failOnError = false
+}
+
+java {
+    withJavadocJar()
+}
+
+task sourceJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allJava
+    from('src/main/resources') {
+        include '**/*'
+    }
+}
+
+publishing {
+    publications {
+        gdxClipper2(MavenPublication) {
+            pom {
+                name = "gdx-Clipper2"
+                description = "libGDX Java port of Clipper2, a Polygon Clipping and Offsetting Library"
+                url = "https://github.com/lyze237/gdx-Clipper2"
+                licenses {
+                    license {
+                        name = "Boost Software License - Version 1.0 - August 17th, 2003"
+                        url = "https://github.com/lyze237/gdx-Clipper2/blob/master/LICENSE"
+                    }
+                }
+            }
+            from components.java
+
+            artifact sourceJar
+        }
+    }
+}

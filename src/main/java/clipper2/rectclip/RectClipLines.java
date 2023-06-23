@@ -6,7 +6,7 @@ import clipper2.core.Path64;
 import clipper2.core.Paths64;
 import clipper2.core.Point64;
 import clipper2.core.Rect64;
-import tangible.RefObject;
+import clipper2.tangible.RefObject;
 
 /**
  * RectClipLines intersects subject open paths (polylines) with the specified

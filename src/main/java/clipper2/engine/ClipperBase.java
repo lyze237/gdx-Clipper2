@@ -18,8 +18,8 @@ import clipper2.core.Paths64;
 import clipper2.core.Point64;
 import clipper2.core.PointD;
 import clipper2.core.Rect64;
-import tangible.OutObject;
-import tangible.RefObject;
+import clipper2.tangible.OutObject;
+import clipper2.tangible.RefObject;
 
 /**
  * Subject and Clip paths are passed to a Clipper object via AddSubject,

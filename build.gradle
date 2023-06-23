@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+apply from: 'utils.gradle'
+group 'clipper2'
+version "1.0.${getGitHash()}"
+apply from: 'publishing.gradle'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = 8
+    targetCompatibility = 8
+}
+
+compileTestJava {
+    sourceCompatibility = 8
+    targetCompatibility = 8
+}
+
+compileJava {
+    options.incremental = true
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
