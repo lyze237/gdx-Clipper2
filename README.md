@@ -1,8 +1,11 @@
-[![](https://jitpack.io/v/micycle1/Clipper2-java.svg)](https://jitpack.io/#micycle1/Clipper2-java)
+[![](https://jitpack.io/v/lyze237/gdx-Clipper2.svg)](https://jitpack.io/#lyze237/gdx-Clipper2)
 
+This is a fork of: https://github.com/micycle1/Clipper2-java
+
+The only difference is the addition to the `gwt.xml` file needed to build the project for gwt.
 
 # Clipper2-java
-A Java port of _[Clipper2](https://github.com/AngusJohnson/Clipper2)_.
+A Java port of _[Clipper2](https://github.com/AngusJohnson/Clipper2) for libGDX_. 
 
 ## Usage
 
