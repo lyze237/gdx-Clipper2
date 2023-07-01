@@ -86,16 +86,4 @@ public final class Rect64 {
 	public boolean Contains(Rect64 rec) {
 		return rec.left >= left && rec.right <= right && rec.top >= top && rec.bottom <= bottom;
 	}
-
-	@Override
-	public Rect64 clone() {
-		Rect64 varCopy = new Rect64();
-
-		varCopy.left = this.left;
-		varCopy.top = this.top;
-		varCopy.right = this.right;
-		varCopy.bottom = this.bottom;
-
-		return varCopy;
-	}
 }

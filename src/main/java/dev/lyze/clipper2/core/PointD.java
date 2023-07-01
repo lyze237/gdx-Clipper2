@@ -49,7 +49,7 @@ public final class PointD {
 
 	@Override
 	public String toString() {
-		return String.format("(%1$f,%2$f) ", x, y);
+		return "(" + x + ", " + y + ")";
 	}
 
 	public static boolean opEquals(PointD lhs, PointD rhs) {
@@ -72,10 +72,5 @@ public final class PointD {
 	@Override
 	public int hashCode() {
 		return Double.hashCode(x * 31 + y);
-	}
-
-	@Override
-	public PointD clone() {
-		return new PointD(x, y);
 	}
 }

@@ -42,15 +42,4 @@ final class LocalMinima {
 	public int hashCode() {
 		return vertex.hashCode();
 	}
-
-	@Override
-	protected LocalMinima clone() {
-		LocalMinima varCopy = new LocalMinima();
-
-		varCopy.vertex = this.vertex;
-		varCopy.polytype = this.polytype;
-		varCopy.isOpen = this.isOpen;
-
-		return varCopy;
-	}
 }

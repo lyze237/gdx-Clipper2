@@ -85,16 +85,4 @@ public final class RectD {
 				Arrays.asList(new PointD(left, top), new PointD(right, top), new PointD(right, bottom), new PointD(left, bottom)));
 		return result;
 	}
-
-	@Override
-	public RectD clone() {
-		RectD varCopy = new RectD();
-
-		varCopy.left = this.left;
-		varCopy.top = this.top;
-		varCopy.right = this.right;
-		varCopy.bottom = this.bottom;
-
-		return varCopy;
-	}
 }

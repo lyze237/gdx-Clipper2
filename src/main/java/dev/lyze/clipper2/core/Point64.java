@@ -75,7 +75,7 @@ public final class Point64 {
 
 	@Override
 	public String toString() {
-		return String.format("(%1$s,%2$s) ", x, y); // nb: trailing space
+		return "(" + x + ", " + y + ")";
 	}
 
 	@Override
@@ -90,10 +90,5 @@ public final class Point64 {
 	@Override
 	public int hashCode() {
 		return Long.hashCode(x * 31 + y);
-	}
-
-	@Override
-	public Point64 clone() {
-		return new Point64(x, y);
 	}
 }
